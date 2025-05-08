@@ -1,15 +1,16 @@
+import java.util.Vector;
 public class hellogallina {
         public static void main(String[] args){
-        String[] arrayNome = new String[7];
-        arrayNome[0] = "A";
-        arrayNome[1] = "l";
-        arrayNome[2] = "e";
-        arrayNome[3] = "s"; 
-        arrayNome[4] = "s";
-        arrayNome[5] = "i";
-        arrayNome[6] = "o";
-        for (int i = 0; i < 7; i++){
-            System.out.println(arrayNome[i]);
+        Vector<String> v = new Vector<String>();
+        v.add("A");
+        v.add("l");
+        v.add("e");
+        v.add("s");
+        v.add("s");
+        v.add("i");
+        v.add("o");
+        for (int i = 0; i < v.size(); i++) {
+            System.out.println(v.get(i));
         }
         
         System.out.println("Hello Alessio");
